@@ -4,14 +4,14 @@ framework:
   type: node
 
 services:
-  filesystem: nide-fs
+  nide-fs: filesystem
 
 mem: 64M
 
 processes:
-  web: node main.js -p $VCAP_APP_PORT
+  web: node main.js -b -p $VCAP_APP_PORT
 
 hooks:
   pre-running:
-    node main.js init
+    node main.js init $STACKATO_FILESYSTEM
     
