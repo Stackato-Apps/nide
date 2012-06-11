@@ -11,7 +11,7 @@
 
 @implementation NDAppDelegate
 
-@synthesize window;
+@synthesize window = _window;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {

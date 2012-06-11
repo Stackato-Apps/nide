@@ -62,6 +62,10 @@ nide simply by using:
 
     nide
 
+To deploy to Stackato:
+
+    stackato push -n
+
 License
 =======
 

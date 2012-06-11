@@ -10,7 +10,6 @@
 
 @interface NDAppDelegate : NSObject <NSApplicationDelegate, NSOpenSavePanelDelegate> {
     int port;
-    NSWindow *window;
 }
 
 @property (assign) IBOutlet NSWindow *window;

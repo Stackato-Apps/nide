@@ -18,7 +18,6 @@
             case !!path.match(/\.ejs$/): return 'application/x-ejs'
             case !!path.match(/\.jsp$/): return 'application/x-jsp'
             case !!path.match(/\.aspx$/): return 'application/x-aspx'
-            case !!path.match(/\.m(arkdown|d)$/): return 'text/x-markdown'
             default: return 'text/plain';
         }
     }
@@ -30,7 +29,6 @@
     var createCodeMirror = function(parentNode, contents, path, options) {
         var mode = inferCodeMirrorModeFromPath(path);
         var options = {
-            theme: $.cookie('editor-theme') || 'default',
             value: contents,
             mode: mode,
             lineNumbers: true,
