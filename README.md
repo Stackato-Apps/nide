@@ -20,6 +20,34 @@ nide
 - Sleek interface reminiscent of TextMate
 - Node.JS Documentation browsing
 
+Instructions
+============
+
+Local Setup
+-----------
+
+First, install nide with:
+
+    sudo npm install -g nide
+
+On a new or existing directory, use the following command to setup a new nide project:
+
+    nide init
+
+This command will setup a `.nide` directory, automatically add it to your `.npmignore`
+and `.gitignore` files, and start the `nide` server on port 8123. Fire up your web browser
+at `localhost:8123` to use nide. If a directory is already a nide project, you can run
+nide simply by using:
+
+    nide
+
+Deploying to Stackato
+---------------------
+
+    $ git clone git://github.com/Stackato-Apps/nide.git
+    $ cd nide
+    $ stackato push -n
+
 What's new in Nide 0.2.0:
 =========================
 
@@ -43,28 +71,6 @@ What's new in Nide since 0.1.0 was released:
 - HTML files can now be previewed directly from Nide.
 - Image files can now be viewed directly from Nide.
 - Lots of bugfixes.
-
-Instructions
-============
-
-First, install nide with:
-
-    sudo npm install -g nide
-
-On a new or existing directory, use the following command to setup a new nide project:
-
-    nide init
-
-This command will setup a `.nide` directory, automatically add it to your `.npmignore`
-and `.gitignore` files, and start the `nide` server on port 8123. Fire up your web browser
-at `localhost:8123` to use nide. If a directory is already a nide project, you can run
-nide simply by using:
-
-    nide
-
-To deploy to Stackato:
-
-    stackato push -n
 
 License
 =======
