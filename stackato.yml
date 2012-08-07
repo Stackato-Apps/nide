@@ -1,16 +1,13 @@
 name: nide
-
 framework:
   type: node
-
+min_version:
+  client: 1.4.3
 services:
-  nide-fs: filesystem
-
+  ${name}-fs: filesystem
 mem: 64M
-
 processes:
   web: node main.js -b -p $VCAP_APP_PORT
-
 hooks:
   pre-running:
     node main.js init $STACKATO_FILESYSTEM
