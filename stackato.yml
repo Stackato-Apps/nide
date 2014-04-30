@@ -14,4 +14,3 @@ processes:
 hooks:
   pre-running:
     node main.js init
-    
