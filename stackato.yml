@@ -12,5 +12,4 @@ processes:
   web: node main.js -p $VCAP_APP_PORT
 
 hooks:
-  pre-running:
-    node main.js init
+  pre-running: node main.js init
