@@ -12,4 +12,4 @@ processes:
   web: node main.js -p $VCAP_APP_PORT
 
 hooks:
-  pre-running: node main.js init $STACKATO_FILESYSTEM
+  pre-running: sh prepare_project.sh
