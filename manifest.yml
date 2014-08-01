@@ -1,0 +1,14 @@
+applications:
+- name: nide
+  framework:
+    name: node
+  mem: 64M
+  services:
+    ${name}-fs:
+      type: filesystem
+  stackato:
+    hooks:
+      pre-running:
+      - sh prepare_project.sh
+    processes:
+      web: node main.js -p $VCAP_APP_PORT
