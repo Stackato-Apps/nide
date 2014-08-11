@@ -1,7 +1,5 @@
 applications:
 - name: nide
-  framework:
-    name: node
   mem: 64M
   services:
     ${name}-fs:
@@ -10,5 +8,3 @@ applications:
     hooks:
       pre-running:
       - sh prepare_project.sh
-    processes:
-      web: node main.js -p $VCAP_APP_PORT
