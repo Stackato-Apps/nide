@@ -1,6 +1,6 @@
 applications:
 - name: nide
-  mem: 64M
+  mem: 128M
   services:
     ${name}-fs:
       type: filesystem
