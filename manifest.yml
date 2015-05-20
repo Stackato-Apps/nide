@@ -1,10 +1,7 @@
 applications:
 - name: nide
+  docker_image: stackatoapps/nide:latest
   mem: 128M
   services:
     ${name}-fs:
       type: filesystem
-  stackato:
-    hooks:
-      pre-running:
-      - sh prepare_project.sh
