@@ -41,11 +41,9 @@ nide simply by using:
 
     nide
 
-Deploying to Stackato
----------------------
+Deploying to HPE Helion Stackato
+--------------------------------
 
-    $ git clone git://github.com/Stackato-Apps/nide.git
-    $ cd nide
     $ stackato push -n
 
 What's new in Nide 0.2.0:
