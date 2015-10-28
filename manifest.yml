@@ -1,7 +1,7 @@
 applications:
 - name: nide
   docker_image: stackatoapps/nide:latest
-  mem: 128M
+  memory: 128M
   services:
     ${name}-fs:
       type: filesystem
