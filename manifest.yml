@@ -1,9 +1,11 @@
 applications:
 - name: nide
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack#v1.5.5
   memory: 128M
   services:
     ${name}-fs:
       type: filesystem
+  stack: cflinuxfs2
   stackato:
     hooks:
       pre-running:
